@@ -14,28 +14,28 @@
   </head>
   <body>
     <header class="hero" id="top">
-      <div class="hero__shade"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
       <nav class="nav shell" aria-label="Главная навигация">
         <button class="nav__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
-        <div class="nav__links nav__links--left">
+        <div class="nav__links nav__links--left" id="nav-primary">
           <a href="#catalog">Каталог</a><a href="#about">О компании</a><a href="#tasting">Дегустация</a>
         </div>
         <a class="brand" href="#top" aria-label="Букет Молдавии — на главную"><img src="public/assets/logo.png" alt="Букет Молдавии" /></a>
         <div class="nav__links nav__links--right" id="nav-links">
-          <a href="#events">События</a><a href="#contacts">Контакты</a><button class="language" aria-label="Язык: русский"><span aria-hidden="true">◎</span> Русский <span class="chevron">⌄</span></button>
+          <a href="#events">События</a><a href="#contacts">Контакты</a><span class="language" lang="ru" title="Языковые версии находятся в разработке">RU</span>
         </div>
       </nav>
       <div class="hero__content">
         <p class="eyebrow hero__eyebrow">Традиции молдавского виноделия</p>
         <h1>Изысканный вкус<br /><em>с вековой историей</em></h1>
         <p class="hero__subtitle">Традиции, которые чувствуются в каждом глотке</p>
-        <div class="hero__actions" id="tasting">
-          <a class="button button--light" href="#about">Дегустации и экскурсии</a>
-          <a class="round-button" href="#events" aria-label="Смотреть события"><span class="play" aria-hidden="true"></span></a>
+        <div class="hero__actions">
+          <a class="button button--light" href="#tasting">Дегустации и экскурсии</a>
+          <a class="round-button" href="#events" aria-label="Перейти к событиям"><span class="play" aria-hidden="true"></span></a>
           <a class="round-button round-button--down" href="#catalog" aria-label="Перейти к каталогу"><span aria-hidden="true">↓</span></a>
         </div>
       </div>
-      <div class="hero__hint">Moldovan heritage · since 1967</div>
+      <div class="hero__hint">Moldovan heritage</div>
     </header>
 
     <main>
@@ -48,37 +48,51 @@
             <article class="product-card product-card--copy">
               <span class="product-card__index">01 / ВИНО</span><h3>Вина</h3><p class="product-card__subtitle">Ароматизированные</p>
               <p>Являются оригинальными по рецептуре и классическими по технологии производства, готовятся исключительно из натурального сырья с использованием настоев пряно-ароматических растений.</p>
-              <a class="text-button" href="#contacts">Подробнее <span aria-hidden="true">↗</span></a>
+              <span class="category-pending">Раздел готовится</span>
             </article>
             <article class="product-card product-card--image product-card--grapes" aria-label="Коллекция вин">
-              <img src="public/assets/image-24.png" alt="Коллекция напитков Букет Молдавии" loading="lazy" />
+              <img src="public/assets/image-24.png" alt="Коллекция напитков Букет Молдавии" loading="lazy" decoding="async" />
               <span class="image-caption">Коллекция<br />винодельни</span>
             </article>
             <article class="product-card product-card--image product-card--bottles">
-              <img src="public/assets/product-1.png" alt="Айвовый ликёр, коньяк и бальзам Космический" loading="lazy" />
+              <img src="public/assets/product-1.png" alt="Айвовый ликёр, коньяк и бальзам Космический" loading="lazy" decoding="async" />
               <span class="image-caption">Традиция в каждой бутылке</span>
             </article>
             <article class="product-card product-card--copy">
               <span class="product-card__index">02 / КРЕПКИЕ НАПИТКИ</span><h3>Дивины</h3>
               <p>Напиток крепостью 40–45%, изготавливаемый путём настойки трав на спирту с добавлением других ингредиентов, предусмотренных рецептурой (эфирные масла, корни, стебли, листья, сахар, мёд, фрукты и т.д.).</p>
-              <a class="text-button" href="#contacts">Подробнее <span aria-hidden="true">↗</span></a>
+              <span class="category-pending">Раздел готовится</span>
             </article>
             <article class="product-card product-card--copy">
               <span class="product-card__index">03 / ЛИКЁРЫ</span><h3>Ликёры</h3>
               <p>Сладкие ароматные напитки крепостью 15–40%, изготавливаемые путём настаивания фруктов, ягод, трав и пряностей на спирту с добавлением сахара и других ингредиентов, предусмотренных рецептурой.</p>
-              <a class="text-button" href="#contacts">Подробнее <span aria-hidden="true">↗</span></a>
+              <span class="category-pending">Раздел готовится</span>
             </article>
             <article class="product-card product-card--copy product-card--balm">
               <span class="product-card__index">04 / БАЛЬЗАМЫ</span><h3>Бальзамы</h3>
               <p>Напитки крепостью 40–45%, изготавливаемые путём настойки трав, кореньев и других растительных компонентов на спирту с добавлением ингредиентов, предусмотренных рецептурой.</p>
-              <a class="text-button" href="#contacts">Подробнее <span aria-hidden="true">↗</span></a>
+              <span class="category-pending">Раздел готовится</span>
             </article>
           </div>
-          <div class="collection-note" id="about">
+          <div class="collection-note">
             <p class="eyebrow">Создано в Молдове</p>
             <h2>Откройте для себя нашу коллекцию —<br /><em>от классических вин до изысканных бальзамов и ликёров</em></h2>
-            <a class="button button--outline" href="#events">Вся продукция <span aria-hidden="true">→</span></a>
+            <span class="button button--outline button--inactive" aria-label="Полный каталог находится в разработке">Полный каталог — скоро</span>
           </div>
+        </div>
+      </section>
+
+
+      <section class="info-section section" id="about" aria-labelledby="about-title">
+        <div class="shell info-section__grid">
+          <div><p class="eyebrow">О предприятии</p><h2 id="about-title">Букет Молдавии</h2></div>
+          <div><p>Познакомьтесь с продукцией и историей предприятия «Букет Молдавии». Подробный раздел о компании готовится.</p><a class="text-button" href="#contacts">Контакты компании <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+      <section class="info-section info-section--tasting section" id="tasting" aria-labelledby="tasting-title">
+        <div class="shell info-section__grid">
+          <div><p class="eyebrow">Знакомство с производством</p><h2 id="tasting-title">Дегустации и экскурсии</h2></div>
+          <div><p>Информацию о возможности посещения, условиях и записи уточняйте у представителей предприятия.</p><a class="button button--outline" href="mailto:marketing@buket.md?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D0%B4%D0%B5%D0%B3%D1%83%D1%81%D1%82%D0%B0%D1%86%D0%B8%D0%B8">Уточнить условия <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
 
@@ -88,30 +102,30 @@
           <div class="section-heading section-heading--row"><div><p class="eyebrow">Жизнь винодельни</p><h2>События компании</h2></div><span class="section-count">01 — 03</span></div>
           <div class="event-list">
             <article class="event">
-              <div class="event__image"><img src="public/assets/image-31.png" alt="Апероль БМ и коктейль" loading="lazy" /><span>01</span></div>
-              <div class="event__content"><p class="event__category">НОВОСТИ · НАПИТКИ</p><h3>Откройте для себя аутентичный итальянский вкус в каждом глотке «Апероль БМ» от ЗАО «Букет Молдавии»!</h3><time datetime="2026-01">Январь · 2026</time><p class="event__summary">Позиция «Апероль БМ» представляет собой сочетание мастерства и вдохновения, созданное в честь традиционного итальянского ликёра.</p><a class="text-button text-button--arrow" href="#contacts">Читать далее <span aria-hidden="true">→</span></a></div>
+              <div class="event__image"><img src="public/assets/image-31.png" alt="Апероль БМ и коктейль" loading="lazy" decoding="async" /><span>01</span></div>
+              <div class="event__content"><p class="event__category">НОВОСТИ · НАПИТКИ</p><h3>Откройте для себя аутентичный итальянский вкус в каждом глотке «Апероль БМ» от ЗАО «Букет Молдавии»!</h3><time datetime="2026-01">Январь · 2026</time><p class="event__summary">Позиция «Апероль БМ» представляет собой сочетание мастерства и вдохновения, созданное в честь традиционного итальянского ликёра.</p><span class="event__pending">Полная публикация готовится</span></div>
             </article>
             <article class="event">
-              <div class="event__image"><img src="public/assets/image-32.png" alt="Афиша международной выставки ProWein" loading="lazy" /><span>02</span></div>
-              <div class="event__content"><p class="event__category">ВЫСТАВКИ · ГЕРМАНИЯ</p><h3>ЗАО «Букет Молдавии» примет участие в международной выставке «ProWein 2026» в Германии!</h3><time datetime="2026-12">Декабрь · 2026</time><p class="event__summary">Приглашаем провести эти прекрасные дни с нами на международной выставке ProWein в Дюссельдорфе.</p><a class="text-button text-button--arrow" href="#contacts">Читать далее <span aria-hidden="true">→</span></a></div>
+              <div class="event__image"><img src="public/assets/image-32.png" alt="Афиша международной выставки ProWein" loading="lazy" decoding="async" /><span>02</span></div>
+              <div class="event__content"><p class="event__category">ВЫСТАВКИ · ГЕРМАНИЯ</p><h3>ЗАО «Букет Молдавии» примет участие в международной выставке «ProWein 2026» в Германии!</h3><span class="event__pending">Дата требует подтверждения</span><p class="event__summary">Приглашаем провести эти прекрасные дни с нами на международной выставке ProWein в Дюссельдорфе.</p><span class="event__pending">Полная публикация готовится</span></div>
             </article>
             <article class="event">
-              <div class="event__image event__image--space"><img src="public/assets/image-33.png" alt="Космонавт с бальзамом «Космический»" loading="lazy" /><span>03</span></div>
-              <div class="event__content"><p class="event__category">ИСТОРИИ · БАЛЬЗАМЫ</p><h3>Российские космонавты попробовали приднестровский «космический» бальзам</h3><time datetime="2026-11">Ноябрь · 2026</time><p class="event__summary">Гости посетили завод «Букет Молдавии», открыли для себя историю производства и продегустировали фирменные бальзамы.</p><a class="text-button text-button--arrow" href="#contacts">Читать далее <span aria-hidden="true">→</span></a></div>
+              <div class="event__image event__image--space"><img src="public/assets/image-33.png" alt="Космонавт с бальзамом «Космический»" loading="lazy" decoding="async" /><span>03</span></div>
+              <div class="event__content"><p class="event__category">ИСТОРИИ · БАЛЬЗАМЫ</p><h3>Российские космонавты попробовали приднестровский «космический» бальзам</h3><span class="event__pending">Дата требует подтверждения</span><p class="event__summary">Гости посетили завод «Букет Молдавии», открыли для себя историю производства и продегустировали фирменные бальзамы.</p><span class="event__pending">Полная публикация готовится</span></div>
             </article>
           </div>
-          <a class="more-link" href="#contacts">Больше новостей <span aria-hidden="true">↓</span></a>
+          <p class="archive-pending">Архив новостей — в разработке</p>
         </div>
       </section>
     </main>
 
     <footer class="footer" id="contacts">
-      <div class="footer__backdrop"></div>
+      <div class="footer__backdrop" aria-hidden="true"></div>
       <div class="shell footer__inner">
-        <div class="footer__brand"><a href="#top"><img src="public/assets/logo.png" alt="Букет Молдавии" /></a><img class="footer__crest" src="public/assets/news-1.png" alt="" /><p>Изысканный вкус<br />начинается здесь!</p><a href="mailto:marketing@buket.md"><img class="contact-icon" src="public/assets/mail.svg" alt="" />marketing@buket.md</a><a href="tel:+37323134249">☎ &nbsp;+373 231 3-42-49</a><div class="socials" aria-label="Социальные сети"><span title="Facebook — добавьте ссылку"><img src="public/assets/facebook.svg" alt="Facebook" /></span><span title="Instagram — добавьте ссылку"><img src="public/assets/instagram.svg" alt="Instagram" /></span><span title="Viber — добавьте ссылку"><img src="public/assets/viber.svg" alt="Viber" /></span><span title="Telegram — добавьте ссылку"><img src="public/assets/telegram.svg" alt="Telegram" /></span><span title="WhatsApp — добавьте ссылку"><img src="public/assets/whatsapp.svg" alt="WhatsApp" /></span></div></div>
+        <div class="footer__brand"><a href="#top"><img src="public/assets/logo.png" alt="Букет Молдавии" /></a><img class="footer__crest" src="public/assets/news-1.png" alt="" /><p>Изысканный вкус<br />начинается здесь!</p><a href="mailto:marketing@buket.md"><img class="contact-icon" src="public/assets/mail.svg" alt="" />marketing@buket.md</a><a href="tel:+37323134249">☎ &nbsp;+373 231 3-42-49</a><div class="socials" aria-label="Социальные сети — адреса уточняются"><span aria-hidden="true"><img src="public/assets/facebook.svg" alt="Facebook" /></span><span aria-hidden="true"><img src="public/assets/instagram.svg" alt="Instagram" /></span><span aria-hidden="true"><img src="public/assets/viber.svg" alt="Viber" /></span><span aria-hidden="true"><img src="public/assets/telegram.svg" alt="Telegram" /></span><span aria-hidden="true"><img src="public/assets/whatsapp.svg" alt="WhatsApp" /></span></div></div>
         <div class="footer__map"><img src="public/assets/news-2.png" alt="Карта Молдовы" /></div>
-        <div class="footer__column"><h2>Продукция</h2><a href="#catalog">Вермуты</a><a href="#catalog">Крепкие напитки</a><a href="#catalog">Игристые вина</a><a href="#catalog">Полусладкие вина</a></div>
-        <div class="footer__column"><h2>Компания</h2><a href="#about">О компании</a><a href="#about">История</a><a href="#events">Новости</a><a href="#tasting">Дегустации</a><a href="#contacts">Магазины</a><a href="#contacts">Документация</a></div>
+        <div class="footer__column"><h2>Продукция</h2><a href="#catalog">Коллекции продукции</a><span class="footer__muted">Полный каталог готовится</span></div>
+        <div class="footer__column"><h2>Компания</h2><a href="#about">О компании</a><a href="#events">События</a><a href="#tasting">Дегустации</a><a href="#contacts">Контакты</a></div>
         <p class="footer__copyright">2026 © Букет Молдавии. Все права защищены.</p>
       </div>
     </footer>
