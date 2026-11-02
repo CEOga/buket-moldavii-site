@@ -1,25 +1,27 @@
-# Букет Молдавии — сайт
+# Букет Молдавии — Astro 2.0
 
-Статическая адаптивная страница на HTML, CSS и JavaScript.
+Адаптивный сайт перенесён на Astro с сохранением дизайна и клиентской функциональности Foundation v2. Визуальный слой, тексты, изображения и интерактивное меню взяты из этой ветки без редизайна.
 
-## Просмотр локально
+## Локальная разработка
 
-Откройте `index.html` в браузере. Для локального HTTP-просмотра из этой папки можно выполнить:
+Требуется Node.js 22.23.4 или новее.
 
 ```bash
-python3 -m http.server 4173
+npm install
+npm run dev
 ```
 
-Затем откройте `http://localhost:4173`.
+Для production-сборки:
 
-## Публикация через GitHub и Cloudflare Pages
+```bash
+npm run build
+npm run preview
+```
 
-1. Создайте новый GitHub-репозиторий и загрузите в него содержимое этой папки. Корневой `index.html` должен находиться в корне репозитория.
-2. В Cloudflare Dashboard откройте **Workers & Pages → Create application → Pages → Connect to Git**.
-3. Подключите GitHub и выберите созданный репозиторий.
-4. Для этой статической страницы оставьте команду сборки пустой, укажите каталог сборки `.` (корень репозитория) и не меняйте Root directory.
-5. Нажмите **Save and Deploy**. Последующие изменения в выбранной production-ветке Cloudflare будет публиковать автоматически.
+Astro генерирует статический сайт в каталоге `dist/`. Серверный адаптер не требуется.
 
-Репозиторий можно оставить приватным: публичный сайт будет размещаться на Cloudflare Pages.
+## Cloudflare Pages
 
-Официальная инструкция: https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/
+Для отдельной Pages-публикации подключить репозиторий `CEOga/buket-moldavii-site`, production branch `CEOga-patch-1`, root directory `/`, build command `npm run build` и build output directory `dist`. Установить переменную окружения `NODE_VERSION=22.23.4`.
+
+Сайт на основной ветке `main` и существующая Pages-публикация не затрагиваются.
